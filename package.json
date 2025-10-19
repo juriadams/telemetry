@@ -1,0 +1,43 @@
+{
+	"name": "@juriadams/telemetry",
+	"description": "A tiny fetch wrapper that tracks request duration, latency, and server timings.",
+	"version": "0.0.2",
+	"type": "module",
+	"private": false,
+	"files": [
+		"dist",
+		"package.json",
+		"readme.md",
+		"changelog.md"
+	],
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.mts",
+	"scripts": {
+		"build": "obuild",
+		"typecheck": "tsc --noEmit",
+		"test": "bun test",
+		"exports": "attw --pack . --profile esm-only",
+		"lint": "biome lint . && biome check .",
+		"format": "biome lint --write . && biome format --write . && biome check --write .",
+		"changeset": "changeset add",
+		"version": "changeset version",
+		"publish": "bun run build && changeset publish"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "0.18.2",
+		"@biomejs/biome": "2.2.5",
+		"@changesets/cli": "2.29.7",
+		"@types/bun": "latest",
+		"obuild": "0.2.1"
+	},
+	"peerDependencies": {
+		"typescript": "5.9.2"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"types": "./dist/index.d.mts",
+			"import": "./dist/index.mjs"
+		}
+	}
+}
