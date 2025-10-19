@@ -5,17 +5,17 @@ import { defineBuildConfig } from "obuild/config";
 const dir = dirname(fileURLToPath(import.meta.url));
 
 export default defineBuildConfig({
-	entries: [
-		{
-			type: "bundle",
-			input: ["src/index.ts"],
-			rolldown: {
-				resolve: {
-					alias: {
-						"@": resolve(dir, "src"),
-					},
-				},
-			},
-		},
-	],
+  entries: [
+    {
+      type: "bundle",
+      input: ["src/index.ts"],
+      rolldown: {
+        resolve: {
+          alias: {
+            "@": resolve(dir, "src"),
+          },
+        },
+      },
+    },
+  ],
 });
