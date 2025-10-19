@@ -19,14 +19,11 @@
 		"exports": "attw --pack . --profile esm-only",
 		"lint": "biome lint . && biome check .",
 		"format": "biome lint --write . && biome format --write . && biome check --write .",
-		"changeset": "changeset add",
-		"version": "changeset version",
-		"publish": "bun run build && changeset publish"
+		"publish": "bun publish --access public"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "0.18.2",
 		"@biomejs/biome": "2.2.6",
-		"@changesets/cli": "2.29.7",
 		"@types/bun": "latest",
 		"obuild": "0.2.1"
 	},
