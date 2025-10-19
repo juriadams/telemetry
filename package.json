@@ -1,7 +1,7 @@
 {
   "name": "@juriadams/telemetry",
   "description": "Lightweight and dead-simple library for collecting telemetry data.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "private": false,
   "files": [
@@ -19,7 +19,7 @@
     "exports": "attw --pack . --profile esm-only",
     "lint": "biome lint . && biome check .",
     "format": "biome lint --write . && biome format --write . && biome check --write .",
-    "release": "bun publish --access public"
+    "release": "bun run build && bun publish --access public"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
