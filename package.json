@@ -19,7 +19,7 @@
 		"exports": "attw --pack . --profile esm-only",
 		"lint": "biome lint . && biome check .",
 		"format": "biome lint --write . && biome format --write . && biome check --write .",
-		"publish": "bun publish --access public"
+		"release": "bun publish --access public"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "0.18.2",
