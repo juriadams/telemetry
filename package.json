@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
-    "@biomejs/biome": "2.2.6",
+    "@biomejs/biome": "2.3.1",
     "@types/bun": "latest",
-    "obuild": "0.2.1"
+    "obuild": "0.3.0"
   },
   "peerDependencies": {
     "typescript": "5.9.2"
