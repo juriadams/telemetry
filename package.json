@@ -22,10 +22,10 @@
     "release": "bun run build && bun publish --access public"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.18.2",
-    "@biomejs/biome": "2.2.6",
+    "@arethetypeswrong/cli": "0.18.3",
+    "@biomejs/biome": "2.4.16",
     "@types/bun": "latest",
-    "obuild": "0.2.1"
+    "obuild": "0.4.36"
   },
   "peerDependencies": {
     "typescript": "5.9.2"
